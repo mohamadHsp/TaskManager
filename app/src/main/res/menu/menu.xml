@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_usr_item"
+        android:title="User"
+        android:icon="@drawable/ic_group_add_user"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/setting_item"
+        android:title="Setting"
+        android:icon="@drawable/ic_setting"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Fragments.AddNewTaskFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/title_editText_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/darkBlack"
+        app:helperText="@string/helperTextForTitle"
+        app:helperTextEnabled="true"
+        app:boxCornerRadiusTopEnd="100dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/backgroundTextViewDialogShowTask"
+        android:hint="@string/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desc_editText_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/darkBlack"
+        app:helperText="@string/helperTextOfDescription"
+        app:helperTextEnabled="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/backgroundTextViewDialogShowTask"
+        app:boxCornerRadiusTopEnd="100dp"
+        android:hint="@string/Description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setDoTime_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        app:cornerRadius="24dp"
+        app:iconPadding="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/setDoTime"
+        android:background="@color/darkBlack"/>
+
+    <TimePicker
+        android:id="@+id/Time_picker_do"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setDoDate_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        app:cornerRadius="24dp"
+        app:iconPadding="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:text="@string/setDoDate"
+        android:background="@color/darkBlack"/>
+
+    <DatePicker
+        android:id="@+id/Date_picker_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/add_done_checkbox_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addTask_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        app:cornerRadius="24dp"
+        app:iconPadding="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="285dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/submitTask"
+        android:background="@color/darkBlack"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="285dp" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
